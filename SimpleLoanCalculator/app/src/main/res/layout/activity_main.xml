@@ -5,19 +5,93 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="คำนวณสินเชื่อ"
         android:textColor="#00a487"
         android:textSize="28dp"
         android:textStyle="bold"
-     
+        android:textAlignment="center"
+        android:layout_marginTop="24dp" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="จำนวนเงินที่ขอกู้(บาท)"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="16dp" />
 
+    <EditText
+        android:id="@+id/edtBaht1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="อัตราดอกเบี้ย (% ต่อปี)"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/edtBaht2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ระยะเวลาที่ขอกู้ (ปี)"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/edtBaht3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <Button
+        android:id="@+id/btnClick"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="คำนวณ"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:backgroundTint="#00a487"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
         />
+
+    <Button
+        android:id="@+id/btnData"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="สินเชื่อแนะนำ"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:backgroundTint="#00a487"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        />
+
 
 
 </LinearLayout>
